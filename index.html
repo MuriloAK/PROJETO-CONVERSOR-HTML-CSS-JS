@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>DEVCLUB CONVERT MONEY</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Convert Money</h1>
+        </header>
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option>R$ Real brasileiro</option>
+                </select>
+            </label>
+            <label>
+                Converter <b>para</b>
+                <select id="currency-select">
+                    <option>US$ Dólar Americano</option>
+                    <option>€ Euro</option>
+                    <option>Bitcoin</option>
+                </select>
+            </label>
+            <label>
+                Valor
+                <input placeholder="Valor em R$" id="input-real">
+            </label>
+
+            <button type="button" id="convert-button">Converter</button>
+
+            <section>
+                <div class="currency-container">
+                    <img src="img/REAL.png" alt="Bandeira-Brasil">
+                    <p class="currency-name">Real</p>
+                    <p class="currency-text" id="real-value-text">R$ 0,00</p>
+                </div>
+
+                <img src="img/SETA.png" alt="Seta" class="seta">
+
+                <div class="currency-container">
+                    <img src="img/DOLAR.png" alt="Bandeira-pais-conversão" id="currency-img">
+                    <p class="currency-name" id="currency-name">Dólar</p>
+                    <p class="currency-text" id="currency-value-text">US$ 0.00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
